@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigasi -->
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#education">Pendidikan</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Proyek</a>
+    <a href="#contact">Contact Person</a>
+  </nav>
+
+  <!-- Data Diri -->
+  <section id="about">
+    <h1 class="highlight">Halo, saya Muhammad Raihan Abubakar</h1>
+    <img src="identitas.jpg".jpg" alt="Foto Profil" class="profile">
+    <p class="highlight">Saya seorang mahasiswa yang sedang menempuh pendidikan di Politeknik Negeri Bandung jurusan Teknik Informatika</p>
+  </section>
+
+  <!-- Pendidikan -->
+  <section id="education">
+    <h1 class="highlight">Riwayat Pendidikan</h1>
+    <ol>
+      <li class="sub-highlight">SD 023 Pajagalan (2012 - 2018)</li>
+      <li class="sub-highlight">SMP Assalaam Bandung (2018 - 2021)</li>
+      <li class="sub-highlight">SMA Negeri 11 Bandung (2021 - 2024)</li>
+      <li class="sub-highlight">Politeknik Negeri Bandung - D3 Teknik Informatika (2024 - sekarang)</li>
+    </ol>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h1 class="highlight">Hard Skills</h1>
+    <ul>
+      <li class="sub-highlight">C Programming</li>
+      <li class="sub-highlight">Database dasar</li>
+    </ul>
+
+    <h1 class="highlight">Soft Skills</h1>
+    <ul>
+      <li class="sub-highlight">Memiliki kemampuan berkomunikasi yang baik</li>
+      <li class="sub-highlight">Bisa membangun tim yang memiliki kekompakan dalam menyelesaikan masalah</li>
+      <li class="sub-highlight">Memiliki manajemen waktu yang baik (bisa membagi skala prioritas)</li>
+    </ul>
+  </section>
+
+    <!-- Proyek -->
+  <section id="projects">
+    <h1 class="highlight">Proyek Saya</h1>
+    <div class="projects">
+      <div class="project-card">
+        <img src="proyek1.jpg" alt="Proyek 1">
+        <p class="sub-highlight">Membuat game bernama brick bricks dengan menggunakan pemrograman bahasa C</p>
+      </div>
+      <div class="project-card">
+        <img src="proyek2.jpg" alt="Proyek 2">
+        <p class="sub-highlight">Membuat game sudoku dengan menggunakan bahasa pemrograman C</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Kontak -->
+  <section id="contact">
+    <h1 class="highlight">Contact Person</h1>
+    <p class="sub-highlight">Email : raihanabubakar5@gmail.com</p>
+    <p class="sub-highlight">
+      <a href="https://github.com/hanzz78" target="_blank">GitHub</a> | 
+      <a href="https://instagram.com/mraihan_5" target="_blank">Instagram</a>
+    </p>
+  </section>
+
+  <script>
+    // Scroll halus dengan JavaScript
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        window.scrollTo({
+          top: target.offsetTop - 50,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
