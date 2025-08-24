@@ -38,12 +38,12 @@ nav a:hover {
 
 /* Tiap Section full layar */
 section {
-  min-height: 100vh;  /* 1 layar penuh */
+  min-height: 100vh;  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 20px; /* ada jarak biar gak nabrak navbar */
+  padding: 80px 20px; 
 }
 
 /* Highlight untuk kalimat */
@@ -101,9 +101,10 @@ section {
   padding: 10px;
 }
 
+/* urutan */
 ol, ul {
   display: flex;
-  flex-direction: column;  /* bikin ke bawah, bukan ke samping */
-  gap: 8px;                /* jarak antar item */
+  flex-direction: column;  
+  gap: 8px;                
   list-style-position: inside;
 }
